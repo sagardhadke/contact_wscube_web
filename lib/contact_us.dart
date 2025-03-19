@@ -29,7 +29,13 @@ class MyContactUs extends StatelessWidget {
               padding: EdgeInsets.all(10),
               height: 95,
               width: double.infinity,
-              color: Color(0XFF0734DA),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Color(0XFF010B38), Color(0XFF0837E4)],
+                  begin: Alignment.bottomLeft,
+                  end: Alignment.topRight,
+                ),
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -51,7 +57,6 @@ class MyContactUs extends StatelessWidget {
             Container(
               height: 150,
               width: double.infinity,
-              // color: Color(0XFF0839E9),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0XFF010B38), Color(0XFF0837E4)],
